@@ -16,3 +16,4 @@ jobs:
     - run: npm test
       env:
         CI: true
+        MONGODB_URI: mongodb://mongo:27017/testing-ci
