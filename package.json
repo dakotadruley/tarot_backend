@@ -11,8 +11,8 @@
   },
   "jest": {
     "testEnvironment": "node",
-    "globalSetup": "alchemy-jest-slack-reporter/setup.js",
-    "globalTeardown": "alchemy-jest-slack-reporter/teardown.js"
+    "testTimeout": 10000,
+    "preset": "jest-puppeteer"
   },
   "keywords": [],
   "author": "",
