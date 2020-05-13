@@ -11,8 +11,7 @@
   },
   "jest": {
     "testEnvironment": "node",
-    "testTimeout": 10000,
-    "preset": "jest-puppeteer"
+    "testTimeout": 10000
   },
   "keywords": [],
   "author": "",
