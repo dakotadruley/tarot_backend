@@ -15,7 +15,7 @@ describe('tarot_backend routes', () => {
   });
 
   afterAll(() => {
-    mongoose.connection.close();
+   return mongoose.connection.close();
   });
 
   it('creates a card via POST', () => {
