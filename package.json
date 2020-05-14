@@ -4,15 +4,14 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "jest --verbose --runInBand --testLocationInResults",
+    "test": "jest --verbose --runInBand --testLocationInResults --detectOpenHandles",
     "test:watch": "npm run test -- --watch",
     "start": "node server.js",
     "start:watch": "nodemon server.js"
   },
   "jest": {
     "testEnvironment": "node",
-    "globalSetup": "alchemy-jest-slack-reporter/setup.js",
-    "globalTeardown": "alchemy-jest-slack-reporter/teardown.js"
+    "testTimeout": 10000
   },
   "keywords": [],
   "author": "",
@@ -27,8 +26,10 @@
     "supertest": "^4.0.2"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "jest-puppeteer": "^4.4.0",
     "mongoose": "^5.9.13"
   }
 }
